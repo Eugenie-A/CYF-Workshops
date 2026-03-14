@@ -29,3 +29,16 @@ export function App() {
 
   return body;
 }
+
+import { Header } from "./header.js";
+import { Main } from "./main.js";
+
+export function App() {
+  const body = document.createElement("body");
+
+  // Call the functions and append the returned elements
+  body.appendChild(Header());
+  body.appendChild(Main());
+
+  return body;
+}
